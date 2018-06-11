@@ -1,0 +1,422 @@
+.wp {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.page {
+    position: relative;
+    font-size: 72px;
+    line-height: 200px;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.bird {
+    width: 15%;
+    top: 15%;
+}
+
+.page1 {
+    background-image: url(../img/p1-b.png);
+}
+
+.page2 {
+    background-image: url(../img/p2-b.png);
+}
+
+.page3 {
+    background-image: url(../img/p3-b.png);
+}
+
+.page4 {
+    background-image: url(../img/p4-b.png);
+}
+
+.page5 {
+    background-image: url(../img/p5-b.png);
+}
+
+.page6 {
+    background-image: url(../img/p6-b.png);
+}
+
+.page7 {
+    background-image: url(../img/p7-b.png);
+}
+
+.page8 {
+    background-image: url(../img/p8-b.gif);
+}
+
+.page9 {
+    background-image: url(../img/p9-b.png);
+}
+
+.page1 .cloud {
+    width: 100%;
+    left: 5%;
+    top: 5%;
+}
+
+.page1 .title {
+    width: 35%;
+    top: 20%;
+    right: 15%;
+}
+
+.page1 .girl {
+    width: 45%;
+    bottom: 3%;
+    right: 5%;
+}
+
+.page1 .next {
+    width: 21%;
+    bottom: 24%;
+    left: 33%;
+    animation-iteration-count: infinite;
+}
+
+.page2 .bubble {
+    width: 50%;
+    top: 24%;
+}
+
+.page2 .door-handler {
+    top: 49%;
+    width: 23%;
+    left: 50%;
+    -webkit-animation: rotateDoor 1s infinite 1s linear;
+    animation: rotateDoor 1s infinite 1s linear;
+}
+
+.page2 .door-wrap{
+    width: 30%;
+    top: 36%;
+    left: 1%;
+    height: auto;
+}
+.page2 .door-wrap .door{
+    display: block;
+    width: 100%;
+    /* animation-iteration-count: infinite; */
+    /* animation-duration: 2s;
+    animation-timing-function: linear; */
+}
+.page2 .next-arrow {
+    left: 5%;
+    bottom: 48%;
+}
+
+.page3 .cloud {
+    width: 100%;
+    top: 2%;
+}
+
+.page3 .girl {
+    width: 40%;
+    bottom: 15%;
+    left: 20%;
+}
+
+.page3 .bubble1 {
+    width: 35%;
+    bottom: 43%;
+    right: 42%;
+}
+
+.page3 .bubble2 {
+    width: 50%;
+    top: 15%;
+}
+
+.page4 .girl {
+    width: 20%;
+    bottom: 0;
+    left: 35%;
+}
+
+.page4 .cloud {
+    width: 90%;
+    top: 5%;
+}
+
+.page4 .next-arrow {
+    top: 30%;
+    left: 15%;
+}
+
+.page5 .cloud {
+    width: 90%;
+    top: 5%;
+}
+
+.page5 .girl {
+    width: 40%;
+    bottom: 16%;
+    left: 40%;
+}
+
+.page5 .bubble {
+    width: 55%;
+    right: -3%;
+    top: 18%;
+}
+
+.page6 .girl {
+    width: 15%;
+    bottom: 0;
+    left: 45%;
+}
+
+.page6 .title {
+    top: 46%;
+    width: 50%;
+    left: 29%;
+}
+
+.page6 .next-arrow {
+    top: 65%;
+    left: 40%;
+}
+
+.page7 .girl {
+    width: 12%;
+    top: 55%;
+}
+
+.page7 .next-arrow {
+    left: 10%;
+    top: 20%;
+}
+.page7 .logo{
+    width: 15%;
+    top: 9%;
+    left: 26%;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+
+.page8 .girl {
+    width: 30%;
+    top: 55%;
+    right: 3%;
+}
+
+.page8 .bubble {
+    width: 55%;
+    top: 17%;
+    left: 49%;
+}
+
+.page8 .next-arrow {
+    top: 47%;
+    left: 38%;
+}
+
+.page9 .bubble {
+    width: 50%;
+    top: 30%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.page9 .btn0 {
+    width: 30%;
+    bottom: 20%;
+    left: 15%;
+}
+
+.page9 .btn1 {
+    width: 30%;
+    bottom: 20%;
+    right: 15%;
+}
+
+.next-arrow {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+.next-arrow b{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    
+}
+
+.next-arrow-left {
+    left: 0;
+    top: 70%;
+}
+
+.next-arrow-left b {
+    background-image: url(../img/arrow1-l.png);
+    -webkit-animation: nextLeft 1.5s infinite linear;
+    animation: nextLeft 1.5s infinite linear;
+}
+
+.next-arrow-right b {
+    background-image: url(../img/arrow1-r.png);
+    -webkit-animation: nextRight 1.5s infinite linear;
+    animation: nextRight 1.5s infinite linear;
+}
+
+.next-arrow-top b {
+    background-image: url(../img/arrow1-t.png);
+    -webkit-animation: start 1.5s infinite linear;
+    animation: start 1.5s infinite linear;
+}
+
+/* 门把手 */
+
+@-webkit-keyframes rotateDoor {
+    0% {
+        -webkit-transform: rotate(0);
+        -webkit-transform-origin: 100% 0%;
+    }
+    100% {
+        -webkit-transform: rotate(-70deg);
+        -webkit-transform-origin: 100% 0%;
+    }
+}
+
+@keyframes rotateDoor {
+    0% {
+        transform: rotate(0);
+        transform-origin: 100% 0%;
+    }
+    100% {
+        transform: rotate(-70deg);
+        transform-origin: 100% 0%;
+    }
+}
+
+/* 箭头 */
+
+@-webkit-keyframes nextLeft {
+    0%, 30% {
+        opacity: 0.3;
+        -webkit-transform: translate(20px, 0);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translate(0, 0);
+    }
+    100% {
+        opacity: 0.3;
+        -webkit-transform: translate(-10px, 0);
+    }
+}
+
+@keyframes nextLeft {
+    0%, 30% {
+        opacity: 0.3;
+        transform: translate(20px, 0);
+    }
+    60% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+    100% {
+        opacity: 0.3;
+        transform: translate(-10px, 0);
+    }
+}
+
+@-webkit-keyframes nextRight {
+    0%, 30% {
+        opacity: 0.3;
+        -webkit-transform: translate(-10px, 0);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translate(0, 0);
+    }
+    100% {
+        opacity: 0.3;
+        -webkit-transform: translate(20px, 0);
+    }
+}
+
+@keyframes nextRight {
+    0%, 30% {
+        opacity: 0.3;
+        transform: translate(-10px, 0);
+    }
+    60% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+    100% {
+        opacity: 0.3;
+        transform: translate(20px, 0);
+    }
+}
+
+/* 箭头 */
+
+@-webkit-keyframes start {
+    0%, 30% {
+        opacity: 0.3;
+        -webkit-transform: translate(0, 10px);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translate(0, 0);
+    }
+    100% {
+        opacity: 0.3;
+        -webkit-transform: translate(0, -5px);
+    }
+}
+
+@keyframes start {
+    0%, 30% {
+        opacity: 0.3;
+        transform: translate(0, 10px);
+    }
+    60% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+    100% {
+        opacity: 0.3;
+        transform: translate(0, -5px);
+    }
+}
+
+.start {
+    position: fixed;
+    left: 50%;
+    margin-left: -17px;
+    top: 95%;
+    margin-top: -34px;
+    width: 34px;
+    height: 34px;
+}
+
+.start b {
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    margin-left: -9px;
+    width: 30px;
+    height: 18px;
+    background: url(../img/arrow.png);
+    background-size: 100% 100%;
+    -webkit-animation: start 1.5s infinite ease-in-out;
+    animation: start 1.5s infinite ease-in-out;
+}
